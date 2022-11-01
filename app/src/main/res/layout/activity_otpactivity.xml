@@ -6,5 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".activities.OTPActivity">
 
-    
+    <include
+        android:id="@+id/my_toolbar"
+        layout="@layout/toolbar" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
