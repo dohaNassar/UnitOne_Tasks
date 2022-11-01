@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "471084132678",
+    "project_id": "trip-unitone",
+    "storage_bucket": "trip-unitone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471084132678:android:e3d436767fc8f86aa21d47",
+        "android_client_info": {
+          "package_name": "com.example.unitonetasks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471084132678-9eqhc9k1glgk5dm78tp894g6mpeg8lh0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXvzRhMR_VVl6p-CPr0qIsNj4aZBYZpS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471084132678-9eqhc9k1glgk5dm78tp894g6mpeg8lh0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
