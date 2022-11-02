@@ -3,17 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".activities.LoginActivity">
+    tools:context=".activities.LoginActivity"
+    >
 
     <include
+
         android:id="@+id/my_toolbar"
         layout="@layout/toolbar" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -25,8 +30,44 @@
             android:layout_height="wrap_content"
             android:text="Login using mobile number OTP"
             android:fontFamily="@font/roboto_medium"
-            android:textColor="@color/dark_purple"/>
+            android:textColor="@color/dark_purple"
+            android:layout_marginLeft="15dp"/>
 
     </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/line"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginHorizontal="20dp"
+        android:id="@+id/etPhoneParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:prefixText="+972"
+        app:prefixTextColor="@color/black"
+        android:hint="Mobile Number"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableStart="@drawable/palestine"
+            android:drawablePadding="10dp"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
 
 </LinearLayout>

@@ -1,5 +1,6 @@
 package com.example.unitonetasks.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -14,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.ViewPager
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener
 import androidx.viewpager2.widget.ViewPager2
+import com.example.unitonetasks.activities.LoginActivity
 import com.example.unitonetasks.adapters.CountryAdapter
 import com.example.unitonetasks.adaptersclass.SliderAdapter
 import com.example.unitonetasks.databinding.ActivityMainBinding
@@ -48,9 +50,16 @@ class HomeFragment : Fragment() {
         rv = binding.rv
 
         fetchData()
+        binding.middleContent.btnSignup.setOnClickListener {
+            gotToSignUp()
+        }
 
 
         return binding.root
+    }
+    private fun gotToSignUp(){
+        val intent = Intent(requireActivity(),LoginActivity::class.java)
+        requireActivity().startActivity(intent)
     }
 
 
