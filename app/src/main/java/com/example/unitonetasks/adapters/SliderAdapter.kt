@@ -18,7 +18,7 @@ import java.util.*
 
 class SliderAdapter( val data: List<Slider>) : PagerAdapter() {
     override fun getCount(): Int {
-        return data.size
+        return Integer.MAX_VALUE
     }
 
     override fun isViewFromObject(view: View, `object`: Any): Boolean {
@@ -27,7 +27,7 @@ class SliderAdapter( val data: List<Slider>) : PagerAdapter() {
 
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
         val binding = SliderItemBinding.inflate(LayoutInflater.from(container.context), container, false)
-        Picasso.get().load(data.get(position).imageURL).into(binding.imgViewCountry)
+        Picasso.get().load(data[position%data.size].imageURL).into(binding.imgViewCountry)
         container.addView(binding.root)
         return binding.root
     }
